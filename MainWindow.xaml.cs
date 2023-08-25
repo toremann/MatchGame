@@ -67,7 +67,8 @@ namespace MatchGame
                 string nextEmoji = animalEmoji[index];
                 textBlock.Text = nextEmoji;
                 animalEmoji.RemoveAt(index);
-            }
+                textBlock.Visibility = Visibility.Visible;
+                }
             timer.Start();
             tenthsOfSecondsElapsed = 0;
             matchesFound = 0;
